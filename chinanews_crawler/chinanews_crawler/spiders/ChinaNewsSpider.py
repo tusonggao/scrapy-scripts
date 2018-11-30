@@ -25,6 +25,6 @@ class ChinaNewsSpider(Spider):
     		feed_item['title'] = item.title.text
     		feed_item['link'] = item.link.text
     		feed_item['desc'] = item.description.text
-    		feed_item['pub_date'] = item.pubdate.text
+    		feed_item['pub_date'] = item.pubDate.text
 
     		yield feed_item
