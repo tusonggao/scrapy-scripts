@@ -9,7 +9,7 @@ class ChinaNewsSpider(Spider):
     name = 'chinanews'
     allowed_domains = ['chinanews.com']
     start_urls = (
-    	'http://http://www.chinanews.com/rss/rss_2.html',
+    	'http://www.chinanews.com/rss/rss_2.html',
     )
 
     def parse(self, response):
