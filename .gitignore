@@ -1,6 +1,8 @@
-# my defined file types
+# my added file types
 *.mylogs
 *.tsg
+*.html
+*.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
