@@ -5,7 +5,8 @@ import scrapy
 class MobileSpider(scrapy.Spider):
     name = 'mobile'
     allowed_domains = ['amazon.com']
-    start_urls = ['http://www.amazon.com/']
+    start_urls = ['https://www.amazon.com/s/ref=nb_sb_noss_2?url=search-alias%3Daps&field-keywords=mobile+phone']
 
     def parse(self, response):
-        pass
+        print(response.body)
+        '//ul[@class="s-results-list-atf"]/li//h2/text()'
