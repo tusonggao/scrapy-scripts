@@ -9,4 +9,5 @@ class MobileSpider(scrapy.Spider):
 
     def parse(self, response):
         print(response.body)
-        '//ul[@class="s-results-list-atf"]/li//h2/text()'
+        titles = response.xpath('//ul[@class="s-results-list-atf"]/li//h2/text()').extract()
+        print('titles is ', titles)
